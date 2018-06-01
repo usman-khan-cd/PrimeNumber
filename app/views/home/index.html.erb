@@ -1,0 +1,5 @@
+<h1>Prime Number</h1>
+<%= form_tag is_prime_number_home_index_path, method: :post, remote: true do %>
+	<%= number_field_tag "number",nil, required: true%>
+	<%= submit_tag "Check Number", class: "submit-btn", id: "submit-btn"%>
+<%end%>
